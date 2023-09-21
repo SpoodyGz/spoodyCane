@@ -14,7 +14,7 @@ end
 
 ---@param obj string
 local function RequestObject(obj)
-    local ped <const> = PlayerPedId()
+    local ped = PlayerPedId()
 
     RequestModel(obj)
 
@@ -34,7 +34,7 @@ local function UseCane()
         return error("Your config is broken, fix it!")
     end
 
-    local player <const> = PlayerPedId()
+    local player = PlayerPedId()
     local anim <const> = config.anim.walk
     local object <const> = config.prop.object
 
@@ -48,7 +48,7 @@ local function UseCane()
 end
 
 local function StopCane()
-    local player <const> = PlayerPedId()
+    local player = PlayerPedId()
 
     if using then
         ResetPedMovementClipset(player, 0.2)
