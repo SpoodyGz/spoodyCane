@@ -22,7 +22,7 @@ local function RequestObject(obj)
         Wait(1)
     end
 
-    local object <const> = CreateObject(obj, GetEntityCoords(ped), true, false, false)
+    local object = CreateObject(obj, GetEntityCoords(ped), true, false, false)
 
     _obj = object
 
